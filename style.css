@@ -3,8 +3,11 @@ html {
 }
 
 .footer {
-    background-color: #141414;
+    background-color: black;
     color:#FFFFFF;
+    height:max-content;
+    width:max-content;
+    
 }
 
 .logo {
@@ -24,5 +27,41 @@ a {
 
 .navbar {
     background-color:#E77500;
-    border-bottom:2px solid white;
+    border-bottom:1px solid white;
+}
+
+.nav-link {
+    color:black;
+    font-weight:440;
+    font-size:16px;
+}
+
+.active {
+    color:white;
+    font-weight:900;
+}
+
+.container {
+    margin-top:100px;
+}
+
+.jumbotron-fluid {
+    background-image:url(imgs/princetonSchool.jpg);
+    height:500px;
+    margin-top:55px;
+    background-position-x: center;
+    border-bottom:1px solid white;
+}
+
+.txt {
+    background-color:rgba(0,0,0,0.7);
+    width:fit-content;
+    margin-left:30px;
+    margin-right:30px;
+    padding-top:10px;
+    padding-bottom:5px;
+}
+
+main {
+    margin-bottom:300px;
 }
