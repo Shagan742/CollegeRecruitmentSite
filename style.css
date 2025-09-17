@@ -7,7 +7,7 @@ html {
     color:#FFFFFF;
     height:max-content;
     width:max-content;
-    
+    box-shadow:0px 0px 190px 130px black;
 }
 
 .logo {
@@ -21,9 +21,15 @@ body {
     color:white;
 }
 
-a {
-    color:white;
+a, .a {
+    color:#E77500;
 }
+
+a:hover, .a:hover {
+    color:red;
+    transition-duration: 0.7s;
+}
+
 
 .navbar {
     background-color:#E77500;
@@ -69,15 +75,42 @@ main {
 }
 
 .card-img-top{
-    height:300px;
+    height:230px;
 }
 
 .card {
-    width:400px;
+    width:300px;
     margin: 0 auto;
 }
 
 .demo {
     width:600px;
     height:300px;
+}
+
+p {
+    font-size:19px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color:black;
+    width:30px;
+    height:30px;
+}
+
+.carousel-indicators {
+    background-color:black;
+    width:60px;
+    justify-content:center;
+}
+
+td {
+    width:1000px;
+}
+
+
+.accordion-button {
+    background-color:#E77500;
+    color:black;
+    font-weight:bold;
 }
