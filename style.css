@@ -47,10 +47,12 @@ a {
 
 .jumbotron-fluid {
     background-image:url(imgs/princetonSchool.jpg);
-    height:500px;
+    height:650px;
     margin-top:55px;
     background-position-x: center;
     border-bottom:1px solid white;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .txt {
@@ -64,4 +66,18 @@ a {
 
 main {
     margin-bottom:300px;
+}
+
+.card-img-top{
+    height:300px;
+}
+
+.card {
+    width:400px;
+    margin: 0 auto;
+}
+
+.demo {
+    width:600px;
+    height:300px;
 }
