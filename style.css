@@ -114,3 +114,19 @@ td {
     color:black;
     font-weight:bold;
 }
+
+.card-text {
+    font-weight:normal;
+}
+
+.aa, .bb {
+background-color: #E77500;  
+border-radius:30%;
+border: 2px solid white;
+}
+
+.accordion-img {
+    margin-top:20px;
+    width:300px;
+    height:auto;
+}
