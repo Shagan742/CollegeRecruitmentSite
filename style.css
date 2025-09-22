@@ -131,3 +131,12 @@ border: 2px solid white;
     height:auto;
 }
 
+.form-label {
+    font-size:18px;
+    color:white;
+}
+
+#SubmitBtn {
+    color:white;
+    background-color:#E77500;
+}

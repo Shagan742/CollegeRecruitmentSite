@@ -101,11 +101,80 @@ Average GPA: 3.95/4.0
           <br>
           <br>
 
-          <div class="row">
+          <div class="row d-flex justify-content-center">
             <h2>What's your chances?</h2>
             <br>
             <br>
+            <br>
+            <br>
             <!-- make form here -->
+
+            <form id="chanceCalc" class="row mb-4 mx-auto">
+                    <!--get SAT-->
+                    <div class="row mb-3 text-center d-flex justify-content-center">
+                        <div class="col-10 mx-3 text-center">
+                        <label for="SATScore" class="form-label">SAT Score</label>
+                        <input type="text" class="form-control" id="SATScore" placeholder="Out of 1600">
+                        </div>
+                    </div>
+
+                    <!--get ACT-->
+                    <div class="row mb-3 text-center d-flex justify-content-center">
+                        <div class="col-10 mx-3 text-center">
+                        <label for="ACTScore" class="form-label">ACT Score</label>
+                        <input type="text" class="form-control" id="ACTScore" placeholder="Out of 36">
+                        </div>
+                    </div>
+
+                    <!--get Class Rank-->
+                    <div class="row mb-3 text-center d-flex justify-content-center">
+                        <div class="col-10 mx-3 text-center">
+                        <label for="classRank" class="form-label">Does Your School Rank?</label>
+                        <div class="row">
+                                <div class="col-6">
+                        <input type="text" class="form-control" id="classRank" placeholder=" ">
+                                </div>
+                                <div class="col-6">
+                                <select id="rankType" class="form-select" required>
+                            <option value="Decile">Decile</option>
+                            <option value="ClassRank">Class Rank</option>
+                            <option value="Neither">Neither</option>
+                        </select>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!--get GPA-->
+                    <div class="row mb-3 text-center d-flex justify-content-center">
+                        <div class="col-10 mx-3 text-center">
+                        <label for="GPAType" class="form-label">GPA</label>
+                        <div class="row">
+                        <div class="col-6">
+                        <input type="text" class="form-control" id="GPAValue" placeholder="Enter GPA of any scale offered by school" required>     
+                        </div>   
+                        <div class="col-6">            
+                        <select id="GPAType" class="form-select" required>
+                            <option value="opt1">4.0</option>
+                            <option value="opt2">5.0</option>
+                            <option value="opt3">6.0</option>
+                            <option value="opt4">4.6</option>
+                        </select>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                </form>
+
+
+
+                <div class="row d-flex justify-content-center mb-3 mx-5">
+                    <div class="col-md-3">
+                 <!--submit button-->
+                 <div type="submit" class="btn d-flex justify-content-center mx-5" id="SubmitBtn">Submit</div>
+              </div>
+                </div>
           </div>
         </main>
         <footer>
