@@ -142,3 +142,14 @@ border: 2px solid white;
     color:white;
     background-color:#E77500;
 }
+
+.princetonLogo {
+    width:auto;
+    height:70px;
+    margin-top:-19px;
+}
+
+.navbar-brand {
+    height:40px;
+    margin:0 auto;
+}
