@@ -91,4 +91,6 @@ SubmitBtn.addEventListener(function() {
     typeOfRank(rankType);
     GPA(GPAType);
 
+    //print out the user inputs too
+
 });
