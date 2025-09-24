@@ -96,6 +96,8 @@ p {
     background-color:black;
     width:30px;
     height:30px;
+    border-radius:70%;
+    border:2px solid white;
 }
 
 .carousel-indicators {

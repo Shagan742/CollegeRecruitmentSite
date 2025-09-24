@@ -131,14 +131,13 @@ Average GPA: 3.95/4.0
                         <div class="col-10 mx-3 text-center">
                         <label for="classRank" class="form-label">Does Your School Rank?</label>
                         <div class="row">
-                                <div class="col-6">
-                        <input type="text" class="form-control" id="classRank" placeholder=" ">
+                                <div class="col-6 form">
+                        <input type="text" class="form-control" id="classRank" placeholder="Put Decile Here">
                                 </div>
                                 <div class="col-6">
                                 <select id="rankType" class="form-select" required>
                             <option value="Decile">Decile</option>
-                            <option value="ClassRank">Class Rank</option>
-                            <option value="Neither">Neither</option>
+                            <option value="Neither" onclick="neither()">Neither</option>
                         </select>
                                 </div>
                         </div>
@@ -155,10 +154,10 @@ Average GPA: 3.95/4.0
                         </div>   
                         <div class="col-6">            
                         <select id="GPAType" class="form-select" required>
-                            <option value="opt1">4.0</option>
-                            <option value="opt2">5.0</option>
-                            <option value="opt3">6.0</option>
-                            <option value="opt4">4.6</option>
+                            <option value="four">4.0</option>
+                            <option value="five">5.0</option>
+                            <option value="six">6.0</option>
+                            <option value="fourPointSix">4.6</option>
                         </select>
                         </div>
                         </div>
