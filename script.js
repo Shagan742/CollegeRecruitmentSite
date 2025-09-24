@@ -1,7 +1,10 @@
+//basically compare against the average, make up some percent math whatever, average them, then tell result
+//change out the random return stuff
+
 // declare variables
 
-let SATScore = document.getElementById("SATScore");
-let ACTScore = document.getElementById("ACTScore");
+let SATScore = document.getElementById("SATScore").value;
+let ACTScore = document.getElementById("ACTScore").value;
 let rankType= document.getElementById("rankType");
 let classRank=document.getElementById("classRank");
 let GPAValue=document.getElementById("GPAValue").value;
@@ -9,26 +12,22 @@ let GPAType=document.getElementById("GPAType");
 let SubmitBtn=document.getElementById("SubmitBtn");
 
 
-function SATScore() {
-    //get user input
-    let SATInput=SATScore.value;
+function SAT() {
 
     //see if its good enough
-    if(SATInput<1540) {
+    if(SATScore<1540) {
         return false;
-    } else if(SATInput>=1540) {
+    } else if(SATScore>=1540) {
         return true;
     }
 }
 
-function ACTScore() {
-    //get user input
-    let ACTInput=ACTScore.value;
+function ACT() {
 
     //see if its good enough
-    if(ACTInput<34) {
+    if(ACTScore<34) {
         return false;
-    } else if(ACTInput>=34) {
+    } else if(ACTScore>=34) {
         return true;
     }
 }
@@ -86,8 +85,10 @@ function GPA(GPAType) {
 }
 
 SubmitBtn.addEventListener(function() {
-    SATScore();
-    ACTScore();
+    SAT();
+    ACT();
     typeOfRank(rankType);
     GPA(GPAType);
+
+
 });
