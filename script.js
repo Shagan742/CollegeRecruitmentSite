@@ -10,15 +10,15 @@ let classRank=document.getElementById("classRank");
 let GPAValue=document.getElementById("GPAValue").value;
 let GPAType=document.getElementById("GPAType");
 let SubmitBtn=document.getElementById("SubmitBtn");
-
+let points=0;
 
 function SAT() {
 
     //see if its good enough
     if(SATScore<1540) {
-        return false;
+        points;
     } else if(SATScore>=1540) {
-        return true;
+        points++;
     }
 }
 
@@ -26,9 +26,9 @@ function ACT() {
 
     //see if its good enough
     if(ACTScore<34) {
-        return false;
+        points;
     } else if(ACTScore>=34) {
-        return true;
+        points++;
     }
 }
 
@@ -40,13 +40,14 @@ function typeOfRank(rankType) {
     if(rankType==='Decile') {
         let x=classRank.value;
         if(x>=3) {
-            return false;
+            points
         } else if (x<3) {
-            return true;
+            points++;
         }
     } else if (rankType==='Neither') {
         //dont count it but idk howta do that
         neither();
+        points;
     }
 }
 
@@ -55,31 +56,31 @@ function GPA(GPAType) {
         //count it outta 4
         
         if(GPAValue<3.8) {
-            return false;
+            points;
         } else if (GPAValue>=3.8) {
-            return true;
+            points++;
         }
     } else if (GPAType==='five') {
         //count it outta 5
 
         if(GPAValue<4.8) {
-            return false;
+            points;
         } else if (GPAValue>=4.8) {
-            return true;
+             points++;
         }
     } else if (GPAType==='six') {
         //count it outta 6
         if(GPAValue<5.8) {
-            return false;
+            points;
         } else if (GPAValue>=5.8) {
-            return true;
+            points++;
         }
     } else if (GPAType==='fourPointSix') {
         //count it outta 4.6
         if(GPAValue<4.4) {
-            return false;
+            points;
         } else if (GPAValue>=4.4) {
-            return true;
+            points++;
         }
     }
 }
@@ -89,6 +90,5 @@ SubmitBtn.addEventListener(function() {
     ACT();
     typeOfRank(rankType);
     GPA(GPAType);
-
 
 });
