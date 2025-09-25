@@ -2,95 +2,79 @@
 //change out the random return stuff
 
 // declare variables
+const SATScore = document.getElementById("SATScore");
+const ACTScore = document.getElementById("ACTScore");
+const GPAValue= document.getElementById("GPAValue");
 
-let SATScore = document.getElementById("SATScore").value;
-let ACTScore = document.getElementById("ACTScore").value;
-let rankType= document.getElementById("rankType");
-let classRank=document.getElementById("classRank");
-let GPAValue=document.getElementById("GPAValue").value;
-let GPAType=document.getElementById("GPAType");
-let SubmitBtn=document.getElementById("SubmitBtn");
-let points=0;
 
-function SAT() {
+function SAT(SATScore) {
 
     //see if its good enough
     if(SATScore<1540) {
-        points;
+    return 'SAT could use some improvement'
     } else if(SATScore>=1540) {
-        points++;
+    //good    
     }
 }
 
-function ACT() {
+
+
+function ACT(ACTScore) {
 
     //see if its good enough
     if(ACTScore<34) {
-        points;
+    //bad
     } else if(ACTScore>=34) {
-        points++;
-    }
-}
-
- function neither() {
-            document.getElementsByClassName("form").classList.add('d-none');
-        }
-
-function typeOfRank(rankType) {
-    if(rankType==='Decile') {
-        let x=classRank.value;
-        if(x>=3) {
-            points
-        } else if (x<3) {
-            points++;
-        }
-    } else if (rankType==='Neither') {
-        //dont count it but idk howta do that
-        neither();
-        points;
+        //good
     }
 }
 
 function GPA(GPAType) {
+
     if(GPAType==='four') {
         //count it outta 4
         
         if(GPAValue<3.8) {
-            points;
+          //bad
         } else if (GPAValue>=3.8) {
-            points++;
+          //good
         }
     } else if (GPAType==='five') {
         //count it outta 5
 
         if(GPAValue<4.8) {
-            points;
+           //bad
         } else if (GPAValue>=4.8) {
-             points++;
+        //good
         }
     } else if (GPAType==='six') {
         //count it outta 6
         if(GPAValue<5.8) {
-            points;
+         //bad
         } else if (GPAValue>=5.8) {
-            points++;
+        //good
         }
     } else if (GPAType==='fourPointSix') {
         //count it outta 4.6
         if(GPAValue<4.4) {
-            points;
+         //bad
         } else if (GPAValue>=4.4) {
-            points++;
+         //good
         }
     }
 }
 
-SubmitBtn.addEventListener(function() {
+
+document.getElementById("SubmitBtn").addEventListener("click", function() {
+
     SAT();
     ACT();
-    typeOfRank(rankType);
-    GPA(GPAType);
+    GPA();
 
     //print out the user inputs too
+    document.getElementById("input1").innerHTML=`SAT Score: ${SATScore.value}`;
+    document.getElementById("input2").innerHTML=`ACT Score: ${ACTScore.value}`;
+    document.getElementById("input3").innerHTML=`GPA: ${GPAValue.value}`;
 
 });
+
