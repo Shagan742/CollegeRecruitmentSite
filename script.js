@@ -74,7 +74,7 @@ function GPA(GPAType) {
        if(GPAValue.value<=3.5) {
             GPAChance=2;
         } else if(GPAValue.value>4.5 && GPAValue.value<5.7) {
-            GPAChance=15;
+            GPAChance=10;
         } else if (GPAValue.value === 5.7) {
             GPAChance = 25;
         } else if (GPAValue.value > 5.7 && GPAValue.value < 6.0) {
